@@ -26,6 +26,8 @@ font-family: 'Poppins', sans-serif;
     align-items: center;
     gap: 34px;
    }
+   
+   
    .nav-title{
     color: #3A3A3A;
     font-size: 16px;
@@ -228,5 +230,51 @@ font-family: 'Poppins', sans-serif;
    width: 32px;
    height: 32px;
    margin-right: 10px;
+  }
+  /* reflexive styles */
+  @media screen and (max-width: 576px){
+   *{
+      align-items: center;
+   }
+   .container{
+      width: 360px;
+     
+   }
+
+   
+   header{
+      align-items: first baseline;
+      margin-bottom: 20px;
+   }
+      
+   .menu-bar{
+      width: 24px;
+      height: 24px;
+   }
+   .nav-title,.fa-magnifying-glass{
+      display: none;
+   }
+   .product{
+      flex-direction: column-reverse;
+   }
+   .main-camera{
+      width: 202px;
+      height: 190px;
+      position: relative;
+      top: -320px;
+      right: 90px;
+   }
+   .circle{
+      width: 257px;
+      height: 257px;
+      position: relative;
+      left: 2px;
+      margin-right: 180px;
+   }
+  }
+  @media screen and (min-width: 577px) {
+   .menu-bar{
+      display: none;
+   }
   }
   
